@@ -322,8 +322,10 @@ And two base accounts:
 | 0 (alice)      | `cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td` |
 | 1 (bob)        | `cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e` |
 
-```text
-👤 alice's account address: cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td
-👤 bob's account address: cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e
-```
+> Take a look at the addresses displayed after starting the chain (the same as above), labels `alice` and `bob` are just helpers
+> to avoid copying and pasting the whole long addresses in commands.
+> ```text
+> 👤 alice's account address: cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td
+> 👤 bob's account address: cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e
+> ```
 
