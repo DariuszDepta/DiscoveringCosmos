@@ -49,3 +49,77 @@ Scaffold a chain named `disco`:
 ```shell
 ignite scaffold chain disco
 ```
+ Output:
+ 
+```text
+⭐️ Successfully created a new blockchain 'disco'.
+👉 Get started with the following commands:
+
+ % cd disco
+ % ignite chain serve
+
+Documentation: https://docs.ignite.com
+```
+
+Follow the instructions above:
+
+```shell
+cd disco
+```
+
+```shell
+ignite chain serve
+```
+
+Output:
+
+```text
+Blockchain is running
+  
+  ✔ Added account alice with address cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td and mnemonic:
+  science pony machine viable trash bitter average off bind remove hungry click rigid fork select clown theme cable episode black actress van rifle length
+  
+  ✔ Added account bob with address cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e and mnemonic:
+  pond puppy margin cotton govern genre argue trial clown paper salute pride wedding defense steel share ketchup pause vacuum flee trophy solid quit evoke
+  
+  🌍 Tendermint node: http://0.0.0.0:26657
+  🌍 Blockchain API: http://0.0.0.0:1317
+  🌍 Token faucet: http://0.0.0.0:4500
+  
+  ⋆ Data directory: ~/.disco
+  ⋆ App binary: ~/go/bin/discod
+  
+  Press the 'q' key to stop serve
+```
+
+Stop the chain by pressing `q`:
+
+```text
+  💿 Genesis state saved in ~/.ignite/local-chains/disco/exported_genesis.json
+  
+  𝓲 Stopped
+```
+
+Re-run the chain, to make sure it works fine:
+
+```shell
+ignite chain serve
+```
+
+Output:
+
+```text
+  Blockchain is running
+  
+  👤 alice's account address: cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td
+  👤 bob's account address: cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e
+  
+  🌍 Tendermint node: http://0.0.0.0:26657
+  🌍 Blockchain API: http://0.0.0.0:1317
+  🌍 Token faucet: http://0.0.0.0:4500
+  
+  ⋆ Data directory: ~/.disco
+  ⋆ App binary: ~/go/bin/discod
+  
+  Press the 'q' key to stop serve
+```
