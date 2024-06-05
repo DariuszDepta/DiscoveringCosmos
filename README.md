@@ -1,46 +1,76 @@
 # Discovering [Cosmos](https://docs.cosmos.network)
 
-
 ## Prerequisities
 
-- Install the newest version of [Go](https://go.dev/doc/install).
+### Install the newest version of [Go](https://go.dev/doc/install)
 
-  Check installed Go version:
+Check installed `Go` version:
 
-  ```shell
-  go version
-  ```
+```shell
+go version
+```
 
-  Output:
+Output:
 
-  ```text
-  go version go1.22.4 linux/amd64
-  ```
+```text
+go version go1.22.4 linux/amd64
+```
 
-- Install the newest version of [IgniteCLI](https://docs.ignite.com/welcome/install).
+### Install the newest version of [IgniteCLI](https://docs.ignite.com/welcome/install)
   
-  Check installed Ignite CLI version:
+Check installed `Ignite CLI` version:
 
-  ```shell
-  ignite version
-  ```
-  
-  Output:
-  
-  ```text
-  Ignite CLI version:             v28.4.0
-  Ignite CLI build date:          2024-05-15T13:42:13Z
-  Ignite CLI source hash:         83ee9ba5f81f2d2104ed91808f2cb72719a23e41
-  Ignite CLI config version:      v1
-  Cosmos SDK version:             v0.50.6
-  Your OS:                        linux
-  Your arch:                      amd64
-  Your Node.js version:           v22.0.0
-  Your go version:                go version go1.22.4 linux/amd64
-  Your uname -a:                  [..]
-  Your cwd:                       [..]
-  Is on Gitpod:                   false
-  ```
+```shell
+ignite version
+```
+
+Output:
+
+```text
+Ignite CLI version:             v28.4.0
+Ignite CLI build date:          2024-05-15T13:42:13Z
+Ignite CLI source hash:         83ee9ba5f81f2d2104ed91808f2cb72719a23e41
+Ignite CLI config version:      v1
+Cosmos SDK version:             v0.50.6
+Your OS:                        linux
+Your arch:                      amd64
+Your Node.js version:           v22.0.0
+Your go version:                go version go1.22.4 linux/amd64
+Your uname -a:                  [..omitted]
+Your cwd:                       [..omitted]
+Is on Gitpod:                   false
+```
+
+### Install [jq](https://jqlang.github.io/jq/download)
+
+Check installed `jq` version:
+
+```shell
+jq --version
+```
+
+Output:
+
+```text
+jq-1.7.1
+```
+
+### Install [curl](https://curl.se)
+
+Check installed `curl` version:
+
+```shell
+curl --version
+```
+
+Output:
+
+```text
+curl 8.6.0 (x86_64-redhat-linux-gnu) [..omitted]
+Release-Date: 2024-01-31
+Protocols: [..omitted]
+Features: [..omitted]
+```
 
 ## Create a chain
 
@@ -100,7 +130,7 @@ Stop the chain by pressing `q`:
   𝓲 Stopped
 ```
 
-Re-run the chain, to make sure it works fine:
+Re-run the chain, to make sure it works:
 
 ```shell
 ignite chain serve
