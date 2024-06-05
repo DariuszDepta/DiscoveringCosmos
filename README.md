@@ -329,3 +329,5 @@ And two base accounts:
 > 👤 bob's account address: cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e
 > ```
 
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
