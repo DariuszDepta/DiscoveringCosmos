@@ -345,6 +345,7 @@ And two base accounts:
 > }
 > ```
 > and `bob` does not?
+> 
 > ```json
 > {
 >   "@type": "/cosmos.auth.v1beta1.BaseAccount",
