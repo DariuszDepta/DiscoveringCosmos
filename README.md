@@ -153,3 +153,153 @@ Output:
   
   Press the 'q' key to stop serve
 ```
+
+## Discover blockchain API
+
+Start the chain:
+
+```shell
+ignite chain serve
+```
+
+Output:
+
+```text
+  Blockchain is running
+  
+  👤 alice's account address: cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td
+  👤 bob's account address: cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e
+  
+  🌍 Tendermint node: http://0.0.0.0:26657
+  🌍 Blockchain API: http://0.0.0.0:1317
+  🌍 Token faucet: http://0.0.0.0:4500
+  
+  ⋆ Data directory: ~/.disco
+  ⋆ App binary: ~/go/bin/discod
+  
+  Press the 'q' key to stop serve
+```
+
+Blockchain exposes its API on this address:
+
+```text
+  🌍 Blockchain API: http://0.0.0.0:1317
+```
+
+The blockchain API documentation is available [**here**](https://docs.cosmos.network/api).
+
+### Exploring REST API endpoints
+
+Open a new terminal window and try the following commands.
+
+Get all existing [accounts](https://docs.cosmos.network/api#tag/Query/operation/Accounts):
+
+```shell
+curl http://0.0.0.0:1317/cosmos/auth/v1beta1/accounts | jq .
+```
+
+Output:
+
+```json
+{
+  "accounts": [
+    {
+      "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+      "base_account": {
+        "address": "cosmos1fl48vsnmsdzcv85q5d2q4z5ajdha8yu34mf0eh",
+        "pub_key": null,
+        "account_number": "4",
+        "sequence": "0"
+      },
+      "name": "bonded_tokens_pool",
+      "permissions": [
+        "burner",
+        "staking"
+      ]
+    },
+    {
+      "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+      "base_account": {
+        "address": "cosmos1tygms3xhhs3yv487phx3dw4a95jn7t7lpm470r",
+        "pub_key": null,
+        "account_number": "5",
+        "sequence": "0"
+      },
+      "name": "not_bonded_tokens_pool",
+      "permissions": [
+        "burner",
+        "staking"
+      ]
+    },
+    {
+      "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+      "base_account": {
+        "address": "cosmos10d07y265gmmuvt4z0w9aw880jnsr700j6zn9kn",
+        "pub_key": null,
+        "account_number": "6",
+        "sequence": "0"
+      },
+      "name": "gov",
+      "permissions": [
+        "burner"
+      ]
+    },
+    {
+      "@type": "/cosmos.auth.v1beta1.BaseAccount",
+      "address": "cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td",
+      "pub_key": {
+        "@type": "/cosmos.crypto.secp256k1.PubKey",
+        "key": "AlH82xkn2yPdPi493oMSC8YF7aUB3aLhnnQv4Hzg1yXT"
+      },
+      "account_number": "0",
+      "sequence": "1"
+    },
+    {
+      "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+      "base_account": {
+        "address": "cosmos1jv65s3grqf6v6jl3dp4t6c9t9rk99cd88lyufl",
+        "pub_key": null,
+        "account_number": "3",
+        "sequence": "0"
+      },
+      "name": "distribution",
+      "permissions": []
+    },
+    {
+      "@type": "/cosmos.auth.v1beta1.BaseAccount",
+      "address": "cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e",
+      "pub_key": null,
+      "account_number": "1",
+      "sequence": "0"
+    },
+    {
+      "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+      "base_account": {
+        "address": "cosmos1m3h30wlvsf8llruxtpukdvsy0km2kum8g38c8q",
+        "pub_key": null,
+        "account_number": "7",
+        "sequence": "0"
+      },
+      "name": "mint",
+      "permissions": [
+        "minter"
+      ]
+    },
+    {
+      "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+      "base_account": {
+        "address": "cosmos17xpfvakm2amg962yls6f84z3kell8c5lserqta",
+        "pub_key": null,
+        "account_number": "2",
+        "sequence": "0"
+      },
+      "name": "fee_collector",
+      "permissions": []
+    }
+  ],
+  "pagination": {
+    "next_key": null,
+    "total": "8"
+  }
+}
+```
