@@ -192,6 +192,8 @@ The blockchain API documentation is available [**here**](https://docs.cosmos.net
 
 Open a new terminal window and try the following commands.
 
+---
+
 #### Get all existing [Accounts](https://docs.cosmos.network/api#tag/Query/operation/Accounts)
 
 ```shell
