@@ -1,0 +1,15 @@
+syntax = "proto3";
+package disco.disco;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "disco/x/disco/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "disco/x/disco/Params";
+  option (gogoproto.equal) = true;
+
+  
+}

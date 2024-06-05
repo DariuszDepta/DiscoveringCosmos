@@ -1,0 +1,17 @@
+syntax = "proto3";
+package disco.disco;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "disco/disco/params.proto";
+
+option go_package = "disco/x/disco/types";
+
+// GenesisState defines the disco module's genesis state.
+message GenesisState {
+  // params defines all the parameters of the module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}

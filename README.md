@@ -44,3 +44,8 @@
 
 ## Create a chain
 
+Scaffold a chain named `disco`:
+
+```shell
+ignite scaffold chain disco
+```
