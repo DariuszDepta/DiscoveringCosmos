@@ -394,3 +394,20 @@ Output:
   }
 }
 ```
+
+```shell
+curl http://0.0.0.0:1317/cosmos/auth/v1beta1/account_info/cosmos17xpfvakm2amg962yls6f84z3kell8c5lserqta | jq .
+```
+
+Output:
+
+```json
+{
+  "info": {
+    "address": "cosmos17xpfvakm2amg962yls6f84z3kell8c5lserqta",
+    "pub_key": null,
+    "account_number": "2",
+    "sequence": "0"
+  }
+}
+```
