@@ -303,3 +303,18 @@ Output:
   }
 }
 ```
+
+| Module account name    | Module account address                          |
+|------------------------|-------------------------------------------------|
+| fee_collector          | `cosmos17xpfvakm2amg962yls6f84z3kell8c5lserqta` |
+| distribution           | `cosmos1jv65s3grqf6v6jl3dp4t6c9t9rk99cd88lyufl` |
+| bonded_tokens_pool     | `cosmos1fl48vsnmsdzcv85q5d2q4z5ajdha8yu34mf0eh` | 
+| not_bonded_tokens_pool | `cosmos1tygms3xhhs3yv487phx3dw4a95jn7t7lpm470r` |
+| gov                    | `cosmos10d07y265gmmuvt4z0w9aw880jnsr700j6zn9kn` |
+| mint                   | `cosmos1m3h30wlvsf8llruxtpukdvsy0km2kum8g38c8q` |
+
+
+| Base account number | Base account address                            |
+|---------------------|-------------------------------------------------|
+| 0                   | `cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td` |
+| 1                   | `cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e` |
