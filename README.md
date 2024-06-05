@@ -415,3 +415,55 @@ Output:
   }
 }
 ```
+
+---
+
+Get balances for `alice`:
+
+```shell
+curl http://0.0.0.0:1317/cosmos/bank/v1beta1/balances/cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td | jq .
+```
+
+```json
+{
+  "balances": [
+    {
+      "denom": "stake",
+      "amount": "100000000"
+    },
+    {
+      "denom": "token",
+      "amount": "20000"
+    }
+  ],
+  "pagination": {
+    "next_key": null,
+    "total": "2"
+  }
+}
+```
+
+Get balances for `bob`:
+
+```shell
+curl http://0.0.0.0:1317/cosmos/bank/v1beta1/balances/cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e | jq .
+```
+
+```json
+{
+  "balances": [
+    {
+      "denom": "stake",
+      "amount": "100000000"
+    },
+    {
+      "denom": "token",
+      "amount": "10000"
+    }
+  ],
+  "pagination": {
+    "next_key": null,
+    "total": "2"
+  }
+}
+```
