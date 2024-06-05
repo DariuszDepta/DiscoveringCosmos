@@ -304,7 +304,9 @@ Output:
 }
 ```
 
-| Module account name    | Module account address                          |
+There are few addresses of modules returned:
+
+| Module name            | Module address                                  |
 |------------------------|-------------------------------------------------|
 | fee_collector          | `cosmos17xpfvakm2amg962yls6f84z3kell8c5lserqta` |
 | distribution           | `cosmos1jv65s3grqf6v6jl3dp4t6c9t9rk99cd88lyufl` |
@@ -313,8 +315,15 @@ Output:
 | gov                    | `cosmos10d07y265gmmuvt4z0w9aw880jnsr700j6zn9kn` |
 | mint                   | `cosmos1m3h30wlvsf8llruxtpukdvsy0km2kum8g38c8q` |
 
+And two base accounts: 
 
-| Base account number | Base account address                            |
-|---------------------|-------------------------------------------------|
-| 0                   | `cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td` |
-| 1                   | `cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e` |
+| Account number | Base account address                            |
+|----------------|-------------------------------------------------|
+| 0 (alice)      | `cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td` |
+| 1 (bob)        | `cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e` |
+
+```text
+👤 alice's account address: cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td
+👤 bob's account address: cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e
+```
+
