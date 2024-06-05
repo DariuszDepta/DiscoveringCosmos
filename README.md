@@ -467,3 +467,33 @@ curl http://0.0.0.0:1317/cosmos/bank/v1beta1/balances/cosmos1k5wrjnxny7ymsymywau
   }
 }
 ```
+
+---
+
+Some more, just randomly selected...
+
+```shell
+curl http://0.0.0.0:1317/cosmos/bank/v1beta1/denoms_metadata | jq .
+```
+
+```shell
+curl http://0.0.0.0:1317/cosmos/distribution/v1beta1/community_pool | jq .
+```
+
+```shell
+curl http://0.0.0.0:1317/cosmos/evidence/v1beta1/evidence | jq .
+```
+
+```shell
+curl http://0.0.0.0:1317/cosmos/gov/v1beta1/proposals | jq .
+```
+
+```shell
+curl http://0.0.0.0:1317/cosmos/mint/v1beta1/inflation | jq .
+```
+
+```shell
+curl http://0.0.0.0:1317/cosmos/tx/v1beta1/txs | jq .
+```
+
+
