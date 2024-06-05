@@ -330,4 +330,27 @@ And two base accounts:
 > ```
 
 > [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
+> Why `alice` has a public key set
+> 
+> ```json
+> {
+>   "@type": "/cosmos.auth.v1beta1.BaseAccount",
+>   "address": "cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td",
+>   "pub_key": {
+>     "@type": "/cosmos.crypto.secp256k1.PubKey",
+>     "key": "AlH82xkn2yPdPi493oMSC8YF7aUB3aLhnnQv4Hzg1yXT"
+>   },
+>   "account_number": "0",
+>   "sequence": "1"
+> }
+> ```
+> and `bob` does not?
+> ```json
+> {
+>   "@type": "/cosmos.auth.v1beta1.BaseAccount",
+>   "address": "cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e",
+>   "pub_key": null,
+>   "account_number": "1",
+>   "sequence": "0"
+> }
+> ```
