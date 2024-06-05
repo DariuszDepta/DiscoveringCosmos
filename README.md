@@ -192,7 +192,7 @@ The blockchain API documentation is available [**here**](https://docs.cosmos.net
 
 Open a new terminal window and try the following commands.
 
-Get all existing [accounts](https://docs.cosmos.network/api#tag/Query/operation/Accounts):
+#### Get all existing [Accounts](https://docs.cosmos.network/api#tag/Query/operation/Accounts)
 
 ```shell
 curl http://0.0.0.0:1317/cosmos/auth/v1beta1/accounts | jq .
@@ -355,3 +355,42 @@ And two base accounts:
 >   "sequence": "0"
 > }
 > ```
+
+#### Get [AccountInfo](https://docs.cosmos.network/api#tag/Query/operation/AccountInfo)
+
+```shell
+curl http://0.0.0.0:1317/cosmos/auth/v1beta1/account_info/cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td | jq .
+```
+
+Output:
+
+```json
+{
+  "info": {
+    "address": "cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td",
+    "pub_key": {
+      "@type": "/cosmos.crypto.secp256k1.PubKey",
+      "key": "AlH82xkn2yPdPi493oMSC8YF7aUB3aLhnnQv4Hzg1yXT"
+    },
+    "account_number": "0",
+    "sequence": "1"
+  }
+}
+```
+
+```shell
+curl http://0.0.0.0:1317/cosmos/auth/v1beta1/account_info/cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e | jq .
+```
+
+Output:
+
+```json
+{
+  "info": {
+    "address": "cosmos1k5wrjnxny7ymsymywau3av2pg4v4cg5u99pz9e",
+    "pub_key": null,
+    "account_number": "1",
+    "sequence": "0"
+  }
+}
+```
