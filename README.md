@@ -356,7 +356,11 @@ And two base accounts:
 > }
 > ```
 
+---
+
 #### Get [AccountInfo](https://docs.cosmos.network/api#tag/Query/operation/AccountInfo)
+
+---
 
 ```shell
 curl http://0.0.0.0:1317/cosmos/auth/v1beta1/account_info/cosmos1secvjzt473ddvgtsv2lwrpe4r88hyrmamel2td | jq .
