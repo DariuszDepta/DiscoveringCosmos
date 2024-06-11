@@ -105,7 +105,28 @@ Output:
 }
 ```
 
-## [REST endpoints](https://docs.cosmos.network/v0.50/build/modules/staking#rest)
+Get staking parameters:
+
+```shell
+curl http://0.0.0.0:1317/cosmos/staking/v1beta1/params | jq .
+```
+
+Output:
+
+```json
+{
+  "params": {
+    "unbonding_time": "1814400s",
+    "max_validators": 100,
+    "max_entries": 7,
+    "historical_entries": 10000,
+    "bond_denom": "stake",
+    "min_commission_rate": "0.000000000000000000"
+  }
+}
+```
+
+## All staking [REST](https://docs.cosmos.network/v0.50/build/modules/staking#rest) endpoints
 
 ```text
 /cosmos/staking/v1beta1/delegations/{delegatorAddr}
