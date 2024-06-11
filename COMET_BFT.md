@@ -1,5 +1,7 @@
 # Discovering CometBFT
 
+Based on: [CometBFT RPC](https://docs.cometbft.com/v1.0/rpc)
+
 Run the chain:
 
 ```shell
